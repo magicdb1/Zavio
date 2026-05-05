@@ -701,7 +701,7 @@ h3 {
   }
 
   h1 {
-    font-size: clamp(3rem, 13vw, 4.4rem);
+    font-size: clamp(2rem, 11.5vw, 4.4rem);
   }
 }
 
@@ -964,5 +964,21 @@ h3 {
   .footer-links {
     flex-direction: column;
     gap: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    max-width: 13ch;
+    font-size: clamp(2.4rem, 11vw, 4rem);
+    letter-spacing: -0.045em;
+    line-height: 1.08;
+  }
+
+  .hero {
+    padding-top: var(--size-3xl);
+  }
+
+  .eyebrow {
+    letter-spacing: 0.12em;
   }
 }
