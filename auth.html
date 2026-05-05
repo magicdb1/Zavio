@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login – Zavio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body data-page="auth">
+    <main class="auth-page">
+      <div class="auth-card">
+        <h1>Account</h1>
+
+        <div class="auth-tabs">
+          <button class="auth-tab active" data-tab="login">Login</button>
+          <button class="auth-tab" data-tab="register">Registrieren</button>
+        </div>
+
+        <!-- LOGIN -->
+        <form id="loginForm" class="auth-form active">
+          <div class="form-group">
+            <label>E-Mail</label>
+            <input id="loginEmail" type="email" required />
+          </div>
+
+          <div class="form-group">
+            <label>Passwort</label>
+            <input id="loginPassword" type="password" required />
+          </div>
+
+          <button class="button button-primary">Einloggen</button>
+          <p id="loginStatus" class="form-status"></p>
+        </form>
+
+        <!-- REGISTER -->
+        <form id="registerForm" class="auth-form">
+          <div class="form-group">
+            <label>Name</label>
+            <input id="registerName" type="text" required />
+          </div>
+
+          <div class="form-group">
+            <label>E-Mail</label>
+            <input id="registerEmail" type="email" required />
+          </div>
+
+          <div class="form-group">
+            <label>Passwort</label>
+            <input id="registerPassword" type="password" required />
+          </div>
+
+          <label>
+            <input type="checkbox" id="termsCheck" required />
+            AGB akzeptieren
+          </label>
+
+          <button class="button button-primary">Registrieren</button>
+          <p id="registerStatus" class="form-status"></p>
+        </form>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

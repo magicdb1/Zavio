@@ -4,19 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zavio</title>
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body data-page="landing">
     <header class="header">
       <nav class="navbar">
-        <a href="#" class="logo">Zavio</a>
+        <a href="index.html" class="logo">Zavio</a>
 
         <ul class="nav-menu">
           <li><a href="#features" class="nav-link">Features</a></li>
@@ -25,9 +19,9 @@
           <li><a href="#contact" class="nav-link">Kontakt</a></li>
         </ul>
 
-        <a href="#" class="button button-primary nav-cta">Starten</a>
+        <a href="auth.html" class="button button-primary nav-cta">Einloggen</a>
 
-        <button class="hamburger" aria-label="Menü öffnen">
+        <button class="hamburger" type="button" aria-label="Menü öffnen">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -39,7 +33,6 @@
       <section class="hero">
         <div class="hero-content">
           <p class="eyebrow">Gym Progress Tracker</p>
-
           <h1>Sieh, wie du stärker wirst.</h1>
 
           <p class="hero-text">
@@ -48,7 +41,9 @@
           </p>
 
           <div class="hero-actions">
-            <a href="#" class="button button-primary">Kostenlos starten</a>
+            <a href="auth.html" class="button button-primary"
+              >Kostenlos starten</a
+            >
             <a href="#features" class="button button-secondary"
               >Mehr erfahren</a
             >
@@ -89,11 +84,7 @@
 
           <div class="progress-box">
             <p>Bench Press Progress</p>
-
-            <div class="progress-bar">
-              <span></span>
-            </div>
-
+            <div class="progress-bar"><span></span></div>
             <small>+12.5 kg in 8 Wochen</small>
           </div>
         </div>
@@ -183,9 +174,10 @@
             <li>Personal Records</li>
           </ul>
 
-          <a href="#" class="button button-primary">Jetzt starten</a>
+          <a href="auth.html" class="button button-primary">Jetzt starten</a>
         </div>
       </section>
+
       <section class="section contact" id="contact">
         <div class="section-heading">
           <p class="eyebrow">Kontakt</p>
@@ -220,15 +212,14 @@
               />
             </div>
 
-            <!-- 🔥 Kategorie (sehr wichtig für SaaS UX) -->
             <div class="form-group">
               <label for="type">Anliegen</label>
               <select id="type" name="type" required>
                 <option value="">Bitte auswählen</option>
-                <option value="support">Support</option>
-                <option value="bug">Bug melden</option>
-                <option value="feature">Feature-Wunsch</option>
-                <option value="other">Sonstiges</option>
+                <option value="Support">Support</option>
+                <option value="Bug melden">Bug melden</option>
+                <option value="Feature-Wunsch">Feature-Wunsch</option>
+                <option value="Sonstiges">Sonstiges</option>
               </select>
             </div>
 
@@ -248,7 +239,6 @@
             <button type="submit" class="button button-primary">
               Nachricht senden
             </button>
-
             <p class="form-status" id="formStatus"></p>
           </form>
 
@@ -261,9 +251,9 @@
             <div class="info-box">
               <h3>E-Mail</h3>
               <p>
-                <a href="mailto:dominik.birchler@icloud.com">
-                  dominik.birchler@icloud.com
-                </a>
+                <a href="mailto:dominik.birchler@icloud.com"
+                  >dominik.birchler@icloud.com</a
+                >
               </p>
             </div>
 
@@ -278,8 +268,7 @@
 
     <footer class="footer">
       <p>© 2026 Zavio. Built for progress.</p>
-
-      <div>
+      <div class="footer-links">
         <a href="impressum.html" class="link">Impressum</a>
         <a href="datenschutz.html" class="link">Datenschutz</a>
         <a href="agb.html" class="link">AGB</a>
@@ -289,9 +278,8 @@
     <div class="cookie-banner" id="cookieBanner">
       <div class="cookie-content">
         <p>
-          Wir verwenden Cookies, um dein Erlebnis zu verbessern und die Nutzung
-          zu analysieren. Mehr dazu in unserer
-          <a href="#">Datenschutzerklärung</a>.
+          Wir verwenden Cookies, um dein Erlebnis zu verbessern. Mehr dazu in
+          unserer <a href="datenschutz.html">Datenschutzerklärung</a>.
         </p>
 
         <div class="cookie-actions">
@@ -304,6 +292,7 @@
         </div>
       </div>
     </div>
+
     <script src="main.js"></script>
   </body>
 </html>
