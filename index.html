@@ -1,10 +1,309 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zavio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="logo">Zavio</a>
+
+        <ul class="nav-menu">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#how" class="nav-link">So funktioniert’s</a></li>
+          <li><a href="#pricing" class="nav-link">Preise</a></li>
+          <li><a href="#contact" class="nav-link">Kontakt</a></li>
+        </ul>
+
+        <a href="#" class="button button-primary nav-cta">Starten</a>
+
+        <button class="hamburger" aria-label="Menü öffnen">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Gym Progress Tracker</p>
+
+          <h1>Sieh, wie du stärker wirst.</h1>
+
+          <p class="hero-text">
+            Tracke Workouts, Gewichte und Wiederholungen. Zavio macht deinen
+            Fortschritt sichtbar — klar, modern und ohne komplizierte Tabellen.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#" class="button button-primary">Kostenlos starten</a>
+            <a href="#features" class="button button-secondary"
+              >Mehr erfahren</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-header">
+            <span>Today's Workout</span>
+            <span class="badge">Push Day</span>
+          </div>
+
+          <div class="lift-list">
+            <div class="lift-item">
+              <div>
+                <strong>Bench Press</strong>
+                <p>3 Sets · 8 Reps</p>
+              </div>
+              <span>80 kg</span>
+            </div>
+
+            <div class="lift-item">
+              <div>
+                <strong>Shoulder Press</strong>
+                <p>3 Sets · 10 Reps</p>
+              </div>
+              <span>42.5 kg</span>
+            </div>
+
+            <div class="lift-item">
+              <div>
+                <strong>Triceps Pushdown</strong>
+                <p>4 Sets · 12 Reps</p>
+              </div>
+              <span>35 kg</span>
+            </div>
+          </div>
+
+          <div class="progress-box">
+            <p>Bench Press Progress</p>
+
+            <div class="progress-bar">
+              <span></span>
+            </div>
+
+            <small>+12.5 kg in 8 Wochen</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="section-heading">
+          <p class="eyebrow">Features</p>
+          <h2>Alles, was du für echten Fortschritt brauchst.</h2>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Workout Tracking</h3>
+            <p>
+              Speichere Übungen, Gewichte, Sets und Wiederholungen an einem Ort.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>Progress Charts</h3>
+            <p>
+              Sieh deine Entwicklung über Wochen und Monate mit klaren Charts.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>Bestleistungen</h3>
+            <p>Erkenne automatisch deine stärksten Lifts und neuen Rekorde.</p>
+          </div>
+
+          <div class="feature-card">
+            <h3>Trainingsvolumen</h3>
+            <p>
+              Verstehe, wie viel du wirklich trainierst — pro Übung oder Woche.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split-section" id="how">
+        <div>
+          <p class="eyebrow">So funktioniert’s</p>
+          <h2>In 3 Schritten zu besserem Überblick.</h2>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <span>01</span>
+            <div>
+              <h3>Übung wählen</h3>
+              <p>Wähle z. B. Bench Press, Squat oder Deadlift.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <span>02</span>
+            <div>
+              <h3>Workout eintragen</h3>
+              <p>Speichere Gewicht, Sets, Reps und Datum.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <span>03</span>
+            <div>
+              <h3>Fortschritt sehen</h3>
+              <p>Vergleiche deine Leistung Woche für Woche.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing" id="pricing">
+        <p class="eyebrow">Pricing</p>
+        <h2>Starte kostenlos.</h2>
+
+        <div class="pricing-card">
+          <h3>Free Plan</h3>
+          <p class="price">CHF 0</p>
+          <p>Perfekt für den Start.</p>
+
+          <ul>
+            <li>Workout Tracking</li>
+            <li>Übungen verwalten</li>
+            <li>Progress Übersicht</li>
+            <li>Personal Records</li>
+          </ul>
+
+          <a href="#" class="button button-primary">Jetzt starten</a>
+        </div>
+      </section>
+      <section class="section contact" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Kontakt</p>
+          <h2>Fragen? Lass uns sprechen.</h2>
+          <p class="contact-text">
+            Egal ob Feedback, Bug oder Feature-Wunsch — wir antworten schnell
+            und helfen dir weiter.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Dein Name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-Mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="du@email.com"
+                required
+              />
+            </div>
+
+            <!-- 🔥 Kategorie (sehr wichtig für SaaS UX) -->
+            <div class="form-group">
+              <label for="type">Anliegen</label>
+              <select id="type" name="type" required>
+                <option value="">Bitte auswählen</option>
+                <option value="support">Support</option>
+                <option value="bug">Bug melden</option>
+                <option value="feature">Feature-Wunsch</option>
+                <option value="other">Sonstiges</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Nachricht</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                minlength="10"
+                maxlength="500"
+                placeholder="Beschreibe dein Anliegen möglichst konkret…"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="button button-primary">
+              Nachricht senden
+            </button>
+
+            <p class="form-status" id="formStatus"></p>
+          </form>
+
+          <div class="contact-info">
+            <div class="info-box">
+              <h3>Support</h3>
+              <p>Antwort innerhalb von 24 Stunden.</p>
+            </div>
+
+            <div class="info-box">
+              <h3>E-Mail</h3>
+              <p>
+                <a href="mailto:dominik.birchler@icloud.com">
+                  dominik.birchler@icloud.com
+                </a>
+              </p>
+            </div>
+
+            <div class="info-box">
+              <h3>Follow</h3>
+              <p>@zavio.ch</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Zavio. Built for progress.</p>
+
+      <div>
+        <a href="impressum.html" class="link">Impressum</a>
+        <a href="datenschutz.html" class="link">Datenschutz</a>
+        <a href="agb.html" class="link">AGB</a>
+      </div>
+    </footer>
+
+    <div class="cookie-banner" id="cookieBanner">
+      <div class="cookie-content">
+        <p>
+          Wir verwenden Cookies, um dein Erlebnis zu verbessern und die Nutzung
+          zu analysieren. Mehr dazu in unserer
+          <a href="#">Datenschutzerklärung</a>.
+        </p>
+
+        <div class="cookie-actions">
+          <button class="button button-secondary" id="declineCookies">
+            Ablehnen
+          </button>
+          <button class="button button-primary" id="acceptCookies">
+            Akzeptieren
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
