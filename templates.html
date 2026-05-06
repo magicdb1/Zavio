@@ -32,39 +32,33 @@
     </header>
 
     <main class="dashboard-page">
-  <section class="dashboard-hero">
-    <p class="eyebrow">Home</p>
-    <h1>Willkommen, <span id="dashboardName">User</span>.</h1>
-    <p>Wähle aus, was du machen möchtest.</p>
-  </section>
+      <section class="dashboard-hero">
+        <p class="eyebrow">Vorlagen</p>
+        <h1>Trainingspläne</h1>
+        <p>Erstelle Vorlagen im Workout-Bereich und lade sie später wieder.</p>
+      </section>
 
-  <section class="dashboard-grid clean-app-grid">
-    <a href="workout.html" class="dashboard-card app-link-card">
-      <p class="eyebrow">Workout</p>
-      <h3>Training starten</h3>
-      <p>Workout eintragen, Übungen hinzufügen und speichern.</p>
-    </a>
+      <section class="dashboard-grid clean-app-grid">
+        <div class="dashboard-card">
+          <p class="eyebrow">Info</p>
+          <h3>So funktioniert es</h3>
+          <p>
+            Vorlagen speicherst du im Workout-Bereich, nachdem du Übungen
+            hinzugefügt hast. Danach kannst du sie beim nächsten Workout laden
+            und bearbeiten.
+          </p>
 
-    <a href="templates.html" class="dashboard-card app-link-card">
-      <p class="eyebrow">Vorlagen</p>
-      <h3>Pläne verwalten</h3>
-      <p>Push, Pull, Legs oder eigene Vorlagen bearbeiten.</p>
-    </a>
+          <a href="workout.html" class="button button-primary">
+            Workout öffnen
+          </a>
+        </div>
 
-    <a href="progress.html" class="dashboard-card app-link-card">
-      <p class="eyebrow">Progress</p>
-      <h3>Fortschritt sehen</h3>
-      <p>Bestleistungen, Volumen und Entwicklung ansehen.</p>
-    </a>
-
-    <div class="dashboard-card">
-      <p class="eyebrow">Profil</p>
-      <h3>Dein Account</h3>
-      <p><strong>Name:</strong> <span id="profileName">-</span></p>
-      <p><strong>E-Mail:</strong> <span id="profileEmail">-</span></p>
-    </div>
-  </section>
-</main>
+        <div class="dashboard-card history-card">
+          <p class="eyebrow">Gespeichert</p>
+          <h3>Deine Vorlagen</h3>
+          <div id="templateOverview"></div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard – Zavio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body data-page="app">
+    <header class="header">
+      <nav class="navbar">
+        <a href="dashboard.html" class="logo">Zavio</a>
+
+        <ul class="nav-menu">
+          <li><a href="dashboard.html" class="nav-link">Home</a></li>
+          <li><a href="workout.html" class="nav-link">Workout</a></li>
+          <li><a href="templates.html" class="nav-link">Vorlagen</a></li>
+          <li><a href="progress.html" class="nav-link">Progress</a></li>
+        </ul>
+
+        <button id="logoutBtnTop" class="button button-secondary nav-cta">
+          Logout
+        </button>
+
+        <button class="hamburger" type="button" aria-label="Menü öffnen">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="dashboard-page">
+      <section class="dashboard-hero">
+        <p class="eyebrow">Progress</p>
+        <h1>Fortschritt</h1>
+        <p>Sieh, ob du stärker wirst.</p>
+      </section>
+
+      <section class="dashboard-grid clean-app-grid">
+        <div class="dashboard-card analysis-card">
+          <p class="eyebrow">Übersicht</p>
+          <h3>Analyse</h3>
+          <p><strong>Workouts:</strong> <span id="analysisCount">0</span></p>
+          <p><strong>Übungen:</strong> <span id="analysisExercises">0</span></p>
+          <p><strong>Volumen:</strong> <span id="analysisVolume">0 kg</span></p>
+          <p>
+            <strong>Stärkste Übung:</strong> <span id="analysisBest">-</span>
+          </p>
+        </div>
+
+        <div class="dashboard-card history-card">
+          <p class="eyebrow">Verlauf</p>
+          <h3>Workouts analysieren</h3>
+
+          <div class="history-filters">
+            <select id="historyTypeFilter">
+              <option value="">Alle Trainings</option>
+              <option value="Push">Push</option>
+              <option value="Pull">Pull</option>
+              <option value="Legs">Legs</option>
+              <option value="Upper">Upper Body</option>
+              <option value="Lower">Lower Body</option>
+              <option value="Full Body">Full Body</option>
+            </select>
+
+            <select id="historyDayFilter">
+              <option value="">Alle Tage</option>
+              <option>Montag</option>
+              <option>Dienstag</option>
+              <option>Mittwoch</option>
+              <option>Donnerstag</option>
+              <option>Freitag</option>
+              <option>Samstag</option>
+              <option>Sonntag</option>
+            </select>
+          </div>
+
+          <div id="workoutList"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Zavio</p>
+      <div>
+        <a href="impressum.html" class="link">Impressum</a>
+        <a href="datenschutz.html" class="link">Datenschutz</a>
+        <a href="agb.html" class="link">AGB</a>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
